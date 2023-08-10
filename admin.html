@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">   
+</head>
+<body>
+    <div class="divForm"><br>
+        <h2>Add Album</h2>
+    <form name = "form1" form action="admin.php" method = "post" enctype = "multipart/form-data" >
+        <div class="container">
+    <label><b>Title</b></label><br>
+    <input type="text" placeholder="Enter Title" name="title" required><br>
+    <label><b>Description:</b></label><br><input type="text" placeholder="Enter Description" name="description" required><br>
+    <label><b>Status</b></label><br>Published<input type="radio" name="status" value="Published" required>
+    Unpublished<input type="radio" name="status" value="Unpublished" required><br>
+    <label><b>Usertype</b></label><br>Normal<input type="radio" name="role" value="Normal" required>
+    Premium<input type="radio" name="role" value="Premium" required><br>
+    <input type="submit" value="Add" id="btn">
+    </div>
+    </form>
+    
+</body>
+</html>

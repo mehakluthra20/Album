@@ -1,0 +1,46 @@
+<html>  
+<head>  
+    <title>PHP login system</title>  
+
+    <link rel = "stylesheet" type = "text/css" href = "style.css">   
+</head>  
+<body>  
+    <div class="divForm"><br>
+        <h2>Login Form</h2> 
+        <form name="f1" action = "auth.php" onsubmit = "return validation()" method = "POST">  
+            <div class="container">
+                <label for="uname"><b>Username</b></label><br>
+                <input type = "text" id ="user" name  = "user" placeholder="Enter Username" required />  
+                <br>
+                <label for="psw"><b>Password</b></label><br>
+                <input type = "password" placeholder="Enter Password" id ="pass" name  = "pass" required/>  
+                <br><br>    
+                <input type =  "submit" id = "btn" value = "Login" />  
+         
+  </div>
+        </form>  
+    </div>    
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</body>     
+</html>  
